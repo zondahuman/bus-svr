@@ -17,6 +17,15 @@
 
 
 
+    <dependencies>
+        <dependency>
+            <artifactId>bus-common</artifactId>
+            <groupId>com.abin.lee</groupId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+
 
 
 </project>

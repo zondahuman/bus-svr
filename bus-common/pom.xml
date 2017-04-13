@@ -11,5 +11,8 @@
 
     <artifactId>bus-common</artifactId>
 
+    <packaging>jar</packaging>
+
+
 
 </project>
