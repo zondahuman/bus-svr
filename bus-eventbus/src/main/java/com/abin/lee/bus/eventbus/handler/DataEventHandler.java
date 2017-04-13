@@ -2,6 +2,7 @@ package com.abin.lee.bus.eventbus.handler;
 
 import com.abin.lee.bus.common.util.JsonUtil;
 import com.abin.lee.bus.eventbus.event.DataEvent;
+import com.google.common.eventbus.AllowConcurrentEvents;
 import com.google.common.eventbus.Subscribe;
 
 /**
@@ -9,10 +10,10 @@ import com.google.common.eventbus.Subscribe;
  * bus-svr
  * com.abin.lee.bus.eventbus.handler
  */
-public class DataEventHandler {
+public interface DataEventHandler {
 
-    @Subscribe
-    public void subscribeEvent(DataEvent event){
-        System.out.println("event="+ JsonUtil.toJson(event));
-    }
+    @AllowConcurrentEvents
+    void subscribeEvent(DataEvent event);
+
+
 }
