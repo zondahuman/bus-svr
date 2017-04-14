@@ -14,7 +14,9 @@ public class DataEventProducer {
 
     public static void main(String[] args) {
         EventBus eventBus = new EventBus();
+
         eventBus.register(new DataEventHandlerImpl());
+
         DataEvent dataEvent = new DataEvent();
         dataEvent.setValue("lee");
         eventBus.post(dataEvent);
